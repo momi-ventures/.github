@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible problem
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Minimal steps, logs, or evidence needed to reproduce the problem.
+  - type: textarea
+    id: validation
+    attributes:
+      label: Environment and validation
+      description: Relevant version, OS, branch/commit, tests, screenshots, or other evidence.
+  - type: checkboxes
+    id: sensitive
+    attributes:
+      label: Sensitive data check
+      options:
+        - label: I did not include credentials, secrets, PHI, customer data, or other sensitive information.
+          required: true
